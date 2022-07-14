@@ -23,6 +23,8 @@ console.log('PORT:', PORT)
 const text = await Deno.readTextFile(`${__dirname}/library/book.txt`)
 console.log(text)
 
+await Deno.writeTextFile(`${__dirname}/library/log.txt`, "Hello World");
+
 // console.log(VERSION)
 
 // console.log(path.dirname('/var/www/hello-world.ts'))
